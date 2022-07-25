@@ -1,0 +1,15 @@
+{% extends "AppWiki/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+    <p><strong>Nombre del equipo: </strong><i>{{equipo.nombre}}</i></p>
+    <p><strong>Liga: </strong><i>{{equipo.liga}}</i></p>
+    <p><strong>Pais: </strong><i>{{equipo.pais}}</i></p>
+    <p><strong>Division: </strong><i>{{equipo.division}}</i></p>
+    <p><strong>Edad: </strong><i>{{equipo.edad}}</i></p>
+    <p><strong>Estadio: </strong><i>{{equipo.estadio}}</i></p>
+    <p>
+        <a href="{% url 'List' %}">Regresar</a>
+    </p>
+{% endblock %}

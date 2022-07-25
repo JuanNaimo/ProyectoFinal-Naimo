@@ -1,0 +1,34 @@
+{% extends "AppWiki/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+<h3>Buscar un jugador:</h3>
+<p>Apellido:</p>
+    <form action="/AppWiki/buscarJugador/" method="GET">
+    
+        <input type="text" name="apellido" >
+    
+        <input type="submit" value="Buscar Jugador">
+    
+    </form>
+
+    
+    {% if jugadores %}
+
+    <p>Estamos buscando al jugador: {{apellido}}</p>
+
+    <ul>
+	{% for jugador in jugadores %}
+		<li>NOMBRE: {{jugador.nombre}}-APELLIDO: {{jugador.apellido}}-EDAD: {{jugador.edad}}-CLUB: {{jugador.club}}-DORSAL: {{jugador.dorsal}}-POSICION: {{jugador.posicion}}-PIE: {{jugador.pie}} </li>
+		
+	{% endfor %}
+
+    </ul>
+   
+    {% endif %}
+
+
+<a class="btn btn-primary" style="margin-left: 10px;margin-bottom: 20px;margin-top: 20px;" href="{% url 'LeerJugadores' %}">Ver Jugadores</a><a class="btn btn-primary" style="margin-left: 10px;margin-bottom: 20px;margin-top: 20px;" href="{% url 'AgregarJugador' %}">Agregar Jugador</a>
+
+{% endblock %}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <!--  This file has been downloaded from bootdey.com @bootdey on twitter -->
+    <!--  All snippets are MIT license http://bootdey.com/license -->
+    <title>Editar mi perfil</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container bootstrap snippets bootdey">
+    <h1 class="text-primary">Editar Perfil</h1>
+      <hr>
+	<div class="row">
+      <!-- left column -->
+      <div class="col-md-3">
+        <div class="text-center">
+          <img src="{{url}}" class="avatar img-circle img-thumbnail" alt="avatar">
+          {% if avatar.exist %}
+          <h4>Subir un avatar</h4>      
+          <a class="btn btn-primary" style="margin-left: 10px" href="{% url 'AgregarAvatar' %}">Agregar Avatar</a>
+          {% endif %}
+        </div>
+      </div>
+      
+      <!-- edit form column -->
+      <div class="col-md-9 personal-info">
+        <div class="alert alert-info alert-dismissable">
+          <a class="panel-close close" data-dismiss="alert">×</a> 
+          <i class="fa fa-coffee"></i>
+          
+        <h3>Personal info</h3>
+        
+        <h3>Editar perfil de {{usuario}}</h3>
+    <form action="" method="POST">{% csrf_token %}
+
+        <table>
+                {{ miFormulario.as_table }}
+
+        </table>
+
+    </form>
+      </div>
+  </div>
+</div>
+<hr>
+
+<a href="{% url 'Inicio' %}"><strong>Volver al inicio</strong></a>
+
+<style type="text/css">
+				                
+body{margin-top:20px;}
+.avatar{
+width:200px;
+height:200px;
+}				              
+</style>
+
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

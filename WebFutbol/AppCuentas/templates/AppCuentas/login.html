@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    {% load static %}
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="{%static 'AppCuentas/fonts/icomoon/style.cs' %}">
+
+    <link rel="stylesheet" href="{%static 'AppCuentas/css/owl.carousel.min.css' %}">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{%static 'AppCuentas/css/bootstrap.min.css' %}">
+    
+    <!-- Style -->
+    <link rel="stylesheet" href="{%static 'AppCuentas/css/style.css' %}">
+
+    <title>Login</title>
+  </head>
+  <body>
+  
+
+  <div class="d-lg-flex half">
+    <div class="bg order-1 order-md-2" style="background-image: url('https://library.sportingnews.com/styles/crop_style_16_9_mobile_2x/s3/2022-05/Split%20de%20fotos.png?itok=0NTmfm04');"></div>
+    <div class="contents order-2 order-md-1">
+
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-7">
+            <h3><strong>Iniciar Sesion</strong></h3>
+            <p class="mb-4">Bienvenido a la wikipedia del futbol argentino!. </p>
+            <form action="" method="post">
+              {% csrf_token %}
+
+              {{form.as_p}}
+              
+              <div class="d-flex mb-5 align-items-center">
+                
+              </div>
+
+              <input type="submit" value="Log In" class="btn btn-block btn-primary">
+
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+    
+    
+
+    <script src="{%static 'AppCuentas/js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{%static 'AppCuentas/js/popper.min.js' %}"></script>
+    <script src="{%static 'AppCuentas/js/bootstrap.min.js' %}"></script>
+    <script src="{%static 'AppCuentas/js/main.js' %}"></script>
+  </body>
+</html>

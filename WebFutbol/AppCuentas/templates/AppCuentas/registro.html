@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!--  This file has been downloaded from bootdey.com @bootdey on twitter -->
+    <!--  All snippets are MIT license http://bootdey.com/license -->
+    <title>Registrate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container bootstrap snippets bootdey">
+    <h1 class="text-primary">Crear Perfil</h1>
+      <hr>
+	<div class="row">
+      
+      
+      <!-- edit form column -->
+      <div class="col-md-9 personal-info">
+        
+        <h3>Informacion Personal</h3>
+        
+        <form action="" method="POST">
+
+          {% csrf_token %}
+  
+          {{form.as_p}}
+          <button type="submit">Registrate</button>
+  
+      </form>
+      </div>
+  </div>
+</div>
+<hr>
+
+<style type="text/css">
+				                
+body{margin-top:20px;}
+.avatar{
+width:200px;
+height:200px;
+}				              
+</style>
+
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+{% extends "AppWiki/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+{% for j in jugadores %}
+         <li>{{j}}</li>
+         <button>
+            <a href="{% url 'eliminarJugador' j.apellido %}">Eliminar</a>
+            <a href="{% url 'editarJugador' j.apellido %}">Editar</a>
+         </button>
+{% endfor %}
+<br>
+<a class="btn btn-primary" style="margin-left: 10px;margin-top: 10px;margin-bottom: 10px;" href="{% url 'Jugadores' %}">Volver atras</a>
+
+{% endblock %}
+
+
+

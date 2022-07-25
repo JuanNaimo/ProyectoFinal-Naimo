@@ -1,0 +1,37 @@
+{% extends "AppWiki/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+<h3>Buscar un Equipo:</h3>
+<p>Nombre:</p>
+    <form action="/AppWiki/buscarEquipo/" method="GET">
+    
+        <input type="text" name="nombre" >
+    
+        <input type="submit" value="Buscar Equipo">
+    
+    </form>
+
+    
+    {% if equipos %}
+
+    <p>Estamos buscando al equipo: {{nombre}}</p>
+
+    <ul>
+	{% for equipo in equipos %}
+		<li>NOMBRE: {{equipo.nombre}}-LIGA: {{equipo.liga}}-EDAD: {{equipo.edad}}-DIVISION: {{equipo.division}}-ESTADIO: {{equipo.estadio}}-PAIS: {{equipo.pais}} </li>
+		
+	{% endfor %}
+
+    </ul>
+   
+    {% endif %}
+
+
+
+
+<a class="btn btn-primary" style="margin-left: 10px;margin-bottom: 20px;margin-top: 20px;" href="{% url 'List' %}">Ver Lista de Equipos</a>
+<a class="btn btn-primary" style="margin-left: 10px;margin-bottom: 20px;margin-top: 20px;" href="{% url 'New' %}">Cargar equipo</a>
+
+{% endblock %}

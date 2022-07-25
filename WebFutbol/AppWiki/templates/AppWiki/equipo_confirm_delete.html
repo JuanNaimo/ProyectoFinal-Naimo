@@ -1,0 +1,17 @@
+{% extends "AppWiki/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+    <form method="post">{% csrf_token %}
+      <strong>¿Confirmar borrado del club?</strong> 
+      <br>
+      NOMBRE: "{{ equipo.nombre }}"
+        <input type="submit" value="BORRAR" />
+    </form>
+
+    <p>
+        <a href="{% url 'List' %}">Regresar</a>
+    </p>
+{% endblock %}

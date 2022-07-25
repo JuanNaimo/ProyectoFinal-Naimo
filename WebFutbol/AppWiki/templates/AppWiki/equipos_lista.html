@@ -1,0 +1,24 @@
+{% extends "AppWiki/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+    <h1>Equipos cargados:</h1>
+    <ul>
+        {% for equipo in object_list %}
+
+        <li>
+            <p><strong>NOMBRE:</strong> {{equipo.nombre}}</p>
+            <p>
+                <a href="{% url 'Detail' equipo.id %}">Ver</a>
+                <a href="{% url 'Delete' equipo.id %}">Borrar</a>
+                <a href="{% url 'Edit' equipo.id %}">Editar</a>
+            </p>
+        </li>
+
+
+
+        {% endfor %}
+    </ul>
+    <a class="btn btn-primary" style="margin-left: 10px;margin-bottom: 20px;margin-top: 20px;" href="{% url 'Equipos' %}">Volver a Equipos</a>
+{% endblock %}
