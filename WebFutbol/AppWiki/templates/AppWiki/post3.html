@@ -1,0 +1,101 @@
+{% extends "AppWiki/padre.html" %}
+
+{% load static %}
+
+{% block contenidoQueCambia %}
+
+<head>
+    <a style="margin-left: 10px;" href="{% url 'Inicio' %}">Regresar a inicio</a>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Clean Blog - Sample Post</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/post-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>La suma que le entra a Boca por el pase de Molina al Atlético</h1>
+                        <h2 class="subheading">El Xeneize recibirá una interesante cifra producto de los derechos por formación del defensor. ¿De cuánto se trata?.</h2>
+                        <span class="meta">Publicado por Ole el 23/07/22</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p>Aunque jugó poco y nada con la azul y oro, Nahuel Molina es uno de los canteranos de Boca con mejor presente a nivel mundial. El ex lateral izquierdo del Xeneize, que llegó a disputar nueve partidos en el club entre febrero y mayo del 2016, es una fija en la lista de Lionel Scaloni para el Mundial de Qatar y acaba de sellar su llegada al Atlético Madrid de Simeone por una cifra cercana a los 12.000.000 de dólares, más otros 6.000.000 en variables. Y producto de esa venta, Boca hará clink caja</p>
+
+                    <p>Pese a haber quedado libre de Boca en agosto del 2020 (no aceptó la oferta para renovar y el Consejo de Fútbol lo colgó) en Molina, de 24 años, le dejará dinero a Boca gracias al "mecanismo de solidaridad". Es decir: los viejos "derechos de formación".</p>
+
+                    <p>A través de esa figura, la FIFA obliga al club comprador (Atlético Madrid, en este caso) a indemnizar a aquellas entidades que "hayan contribuido a la educación y formación del futbolista desde los 12 a los 23 años". Eso, siempre que el pase se realice entre equipos de distintos países. Al club formador entre los 12 y los 15 años le corresponde un 0,25% del valor total de la operación, mientras que de los 16 a los 23, el porcentaje es mayor: 0,5%</p>
+
+                    <p>Molina, formado en el Fútbol Infantil de Boca, permaneció en el club hasta los 19 años. Entre los 19 y los 20 estuvo a préstamo en Defensa y Justicia y entre los 20 y los 21, en Rosario Central. Luego regresó a Boca, donde no fue tenido en cuenta, y en septiembre del 2020, con 22 ya cumplidos, dio el gran salto al Udinese, su último club antes de fichar con el Aleti. De esta manera, a Boca le ingresarán nada menos que 700.000 dólares, que podrían convertirse en 910.000 si se cumplen una serie de objetivos deportivos.</p>
+
+                
+                    <a href="#">
+                        <img class="img-responsive" src="https://images.ole.com.ar/2019/01/24/XuhDymApw_720x0__1.jpg" alt="">
+                    </a>
+                    <span class="caption text-muted">Molina volvió a Boca en 2020, pero no fue tenido en cuenta (Prensa Boca).</span>
+
+                    <p>"Estoy muy contento. Ahora, a esperar a hacer la revisión médica para poder ser nuevo jugador del Atlético de Madrid, así que estoy muy feliz", contó el defensor al arribar este lunes a tierras españoles. De Boca, lamentablemente, no se fue bien. No arregló los números para su renovación y se sometió a una operación de rodilla sin el supuesto consentimiento del club. Molina, igual, le hará ganar a Boca casi un palito verde. Nada despreciable, ¿no?</p>
+
+                </div>
+            </div>
+        </div>
+    </article>
+
+
+
+   
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
+{% endblock %}

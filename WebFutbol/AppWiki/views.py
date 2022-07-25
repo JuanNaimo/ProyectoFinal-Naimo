@@ -231,9 +231,25 @@ class EquipoUpdate(UpdateView):
 class EquipoDelete(DeleteView):
     model=Equipo
     success_url="/AppWiki/equipo/lista"
+
 def post(request):
     avatares=Avatar.objects.filter(user=request.user.id)
     if avatares.exists():
         return render(request, "Appwiki/post.html",{"url":avatares[0].imagen.url})
     else:
         return render(request, "Appwiki/post.html")
+
+def post2(request):
+    avatares=Avatar.objects.filter(user=request.user.id)
+    if avatares.exists():
+        return render(request, "Appwiki/post2.html",{"url":avatares[0].imagen.url})
+    else:
+        return render(request, "Appwiki/post2.html")
+
+def post3(request):
+    avatares=Avatar.objects.filter(user=request.user.id)
+    if avatares.exists():
+        return render(request, "Appwiki/post3.html",{"url":avatares[0].imagen.url})
+    else:
+        return render(request, "Appwiki/post3.html")
+
