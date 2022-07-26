@@ -15,6 +15,7 @@ from django.contrib.auth.forms import AuthenticationForm, UserCreationForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import User
+from time import gmtime, strftime
 # Create your views here.
 def inicio(request):
 
@@ -252,4 +253,5 @@ def post3(request):
         return render(request, "Appwiki/post3.html",{"url":avatares[0].imagen.url})
     else:
         return render(request, "Appwiki/post3.html")
+
 

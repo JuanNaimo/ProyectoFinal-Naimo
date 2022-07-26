@@ -23,7 +23,8 @@ path(r'^editar/(?P<pk>\d+)$', views.EquipoUpdate.as_view(), name="Edit"),
 path(r'^borrar/(?P<pk>\d+)$', views.EquipoDelete.as_view(), name="Delete"),
 path('posteo',views.post, name="Posteo"),
 path('posteo2',views.post2, name="Posteo2"),
-path('posteo3',views.post3, name="Posteo3")
+path('posteo3',views.post3, name="Posteo3"),
+
 
 ]
 
