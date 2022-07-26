@@ -9,3 +9,8 @@ En esta carpeta se guardan los templates .html que se utilizan para el armado de
 # forms.py
 Se encuentran los formularios relacionados a los modelos para el ingreso de datos desde la web para utilizarlos en el proyecto.
 # media
+Video: https://www.youtube.com/watch?v=8JbzJBevhEg
+algunas fotos
+![image](https://user-images.githubusercontent.com/95266425/180909343-7f7ccf54-64d1-46c6-895c-04cbedf7d2ed.png)
+![image](https://user-images.githubusercontent.com/95266425/180909362-9149364e-c3e9-42a4-8d0a-21bcf32bc184.png)
+
